@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Initialize views
         inputLayoutEmail = findViewById(R.id.inputLayoutEmail);
         inputLayoutUsername = findViewById(R.id.inputLayoutUsername);
         inputLayoutPassword = findViewById(R.id.inputLayoutPassword);
@@ -38,32 +37,26 @@ public class MainActivity extends AppCompatActivity {
         editTextPassword = findViewById(R.id.editTextPassword);
 
         buttonRegister = findViewById(R.id.buttonRegister);
-
-        // Initialize database
+        
         appDatabase = AppDatabase.getInstance(this);
 
-        // Set up register button click listener
         buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Validate inputs before proceeding
+     
                 if (validateInputs()) {
-                    // Get input data
+                   
                     String email = editTextEmail.getText().toString().trim();
                     String username = editTextUsername.getText().toString().trim();
                     String password = editTextPassword.getText().toString().trim();
 
-                    // Create a new User object
                     User user = new User(username, email, password);
 
-                    // Save user to the database
                     saveUserToDatabase(user);
 
-                    // Navigate to LoginActivity after successful registration
                     Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                     startActivity(intent);
 
-                    // Optionally, finish MainActivity to prevent going back to the registration screen
                     finish();
                 }
             }
@@ -74,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
     private boolean validateInputs() {
         boolean isValid = true;
 
-        // Validate email
         if (editTextEmail.getText().toString().trim().isEmpty()) {
             inputLayoutEmail.setError("Email is required");
             isValid = false;
@@ -82,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
             inputLayoutEmail.setError(null); // Clear error if input is valid
         }
 
-        // Validate username
         if (editTextUsername.getText().toString().trim().isEmpty()) {
             inputLayoutUsername.setError("Username is required");
             isValid = false;
@@ -90,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
             inputLayoutUsername.setError(null); // Clear error if input is valid
         }
 
-        // Validate password
         if (editTextPassword.getText().toString().trim().isEmpty()) {
             inputLayoutPassword.setError("Password is required");
             isValid = false;
@@ -101,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         return isValid;
     }
 
-    // Save user data to the database
+    // Save user data to database
     private void saveUserToDatabase(final User user) {
         // Perform database operations in a separate thread
         new Thread(new Runnable() {
