@@ -1,0 +1,146 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvQuestion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Apa Bahasa Jepangnya Kelinci?"
+            android:textSize="18sp"
+            android:paddingBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgQuestion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbQ1Option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usagi" />
+
+            <RadioButton
+                android:id="@+id/rbQ1Option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Neko" />
+
+            <RadioButton
+                android:id="@+id/rbQ1Option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Niwatori" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvQuestion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Apa Arti dari Arigatou?"
+            android:textSize="18sp"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/rgQuestion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rbQ2Option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selamat Siang" />
+            <RadioButton
+                android:id="@+id/rbQ2Option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terimakasih" />
+            <RadioButton
+                android:id="@+id/rbQ2Option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sampai Jumpa" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvQuestion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Apa kalimat untuk Menanyakan Kabar dalam Bahasa Jepang?"
+            android:textSize="18sp"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/rgQuestion3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rbQ3Option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ikura Desuka?" />
+            <RadioButton
+                android:id="@+id/rbQ3Option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ogenki Desuka?" />
+            <RadioButton
+                android:id="@+id/rbQ3Option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dore Desuka?" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvQuestion4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Apa Bahasa Jepangnya Cherry?"
+            android:textSize="18sp"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/rgQuestion4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rbQ4Option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sakuranbo" />
+            <RadioButton
+                android:id="@+id/rbQ4Option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Momo" />
+            <RadioButton
+                android:id="@+id/rbQ4Option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Budou" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Submit" />
+
+    </LinearLayout>
+</ScrollView>
