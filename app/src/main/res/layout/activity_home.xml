@@ -13,8 +13,8 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="410dp"
-            android:layout_height="240dp"
+            android:layout_width="342dp"
+            android:layout_height="209dp"
             android:layout_marginTop="48dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -24,41 +24,43 @@
         <Button
             android:id="@+id/button2"
             android:layout_width="141dp"
-            android:layout_height="56dp"
-            android:layout_marginStart="88dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="48dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="20dp"
             android:text="HIRAGANA"
             app:layout_constraintBottom_toTopOf="@+id/imageView4"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="0.4" />
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="139dp"
-            android:layout_height="62dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="141dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
             android:text="KATAKANA"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintHorizontal_bias="0.488"
             app:layout_constraintStart_toEndOf="@+id/button2"
             app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="410dp"
-            android:layout_height="240dp"
-            android:layout_marginTop="14dp"
+            android:layout_width="353dp"
+            android:layout_height="219dp"
+            android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button3"
             app:srcCompat="@drawable/opsi_2" />
 
         <Button
             android:id="@+id/button4"
-            android:layout_width="148dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="80dp"
+            android:layout_width="164dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
             android:layout_marginTop="8dp"
             android:text="BUAH-BUAHAN"
             app:layout_constraintStart_toStartOf="parent"
@@ -73,16 +75,18 @@
             android:text="HEWAN"
             app:layout_constraintBottom_toTopOf="@+id/imageView5"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintHorizontal_bias="0.542"
             app:layout_constraintStart_toEndOf="@+id/button4"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            app:layout_constraintVertical_bias="0.769" />
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="410dp"
-            android:layout_height="240dp"
-            android:layout_marginTop="16dp"
+            android:layout_width="370dp"
+            android:layout_height="205dp"
+            android:layout_marginTop="4dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.578"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button4"
             app:srcCompat="@drawable/opsi_3" />
@@ -91,7 +95,7 @@
             android:id="@+id/button6"
             android:layout_width="143dp"
             android:layout_height="55dp"
-            android:layout_marginStart="80dp"
+            android:layout_marginStart="40dp"
             android:text="PERCAKAPAN"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView5" />
@@ -104,15 +108,15 @@
             android:text="RUANG PUBLIK"
             app:layout_constraintBottom_toTopOf="@+id/imageView6"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.349"
+            app:layout_constraintHorizontal_bias="0.254"
             app:layout_constraintStart_toEndOf="@+id/button6"
             app:layout_constraintTop_toBottomOf="@+id/imageView5"
             app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
             android:id="@+id/imageView6"
-            android:layout_width="194dp"
-            android:layout_height="251dp"
+            android:layout_width="171dp"
+            android:layout_height="199dp"
             android:layout_marginTop="32dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
